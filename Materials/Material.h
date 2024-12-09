@@ -15,12 +15,12 @@ class Material
         int id;
 
 
-        float density;
-        float mass;
-        float volume;
-        float viscosity;
-        float pressure;
-        float temperature;
+        float density; //kg/m3
+        float mass; // kg
+        float volume; // m3
+        double viscosity; // Pa*s (Pascal-seconds)
+        float pressure; // Pa
+        float temperature; // K
 
         float velocity;
         float velocity_vec_x;
@@ -28,8 +28,8 @@ class Material
         float velocity_vec_z;
 
         float pos_x;
-        float pos_x;
-        float pos_x;
+        float pos_y;
+        float pos_z;
 
         float center_x;
         float center_y;
