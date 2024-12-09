@@ -14,6 +14,7 @@ class Material
         float volume;
         float viscosity;
         float pressure;
+        float temperature;
 
         float velocity;
         float velocity_vec_x;
