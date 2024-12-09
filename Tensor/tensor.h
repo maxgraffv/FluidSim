@@ -25,7 +25,8 @@ class Tensor
 
         Tensor(int x, int y, int z);
         T* get(int x, int y, int z);
-        void set(int x, int y, int z, T);
+        void set(int x, int y, int z, T t);
+        void setAll(T t);
          
 
 
