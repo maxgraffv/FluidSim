@@ -2,13 +2,19 @@
 #define MATERIAL_H
 
 #include <stdio.h>
+#include <string>
 
 class Material
 {
     private:
         virtual void init() = 0; // will initialize values for each material
+        static int count;
 
     public:
+        std::string name;
+        int id;
+
+
         float density;
         float mass;
         float volume;
