@@ -9,6 +9,12 @@ class Tensor
 
     private:
 
+        int size_x;
+        int size_y;
+        int size_z;
+
+        int length;
+
 
 
     public:
@@ -24,9 +30,11 @@ class Tensor
         std::vector<T> data;
 
         Tensor(int x, int y, int z);
+
         T* get(int x, int y, int z);
         void set(int x, int y, int z, T t);
         void setAll(T t);
+        int getLength();
          
 
 
@@ -38,7 +46,7 @@ class Tensor
 
 };
 
-
+#include "tensor.tpp"
 
 
 
