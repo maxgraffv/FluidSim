@@ -36,7 +36,7 @@ class Material
         float center_z; //m
 
         Material();
-        virtual ~Material();
+        virtual ~Material() = default;
 
 
 };
