@@ -24,3 +24,23 @@ void Air::init()
     float center_y = 0;
     float center_z = 0;
 }
+
+Air::Air() : Material()
+{
+    this->init();
+}
+
+Air::~Air() 
+{
+
+}
+
+int Air::getId()
+{
+    return this->id;
+}
+
+std::string Air::getName()
+{
+    return this->name;
+}

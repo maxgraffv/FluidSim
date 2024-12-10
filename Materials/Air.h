@@ -5,7 +5,7 @@
 #include <string>
 #include <cmath>
 
-class Air : Material
+class Air : public Material
 {
     private:
 
@@ -16,6 +16,9 @@ class Air : Material
 
     public:
         Air();
+        ~Air();
+        int getId();
+        std::string getName();
        
 
 
