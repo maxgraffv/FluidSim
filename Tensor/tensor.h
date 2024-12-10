@@ -29,6 +29,7 @@ class Tensor
 
         std::vector<T> data;
 
+        Tensor();
         Tensor(int x, int y, int z);
 
         T* get(int x, int y, int z);

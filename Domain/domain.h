@@ -1,6 +1,9 @@
 #ifndef DOMAIN_H
 #define DOMAIN_H
 
+#include "../Tensor/tensor.h"
+#include "../Materials/Air.h"
+
 class Domain
 {
     private:
@@ -13,6 +16,7 @@ class Domain
         int sample_rate; //how many samples per second; makes delta_t 1/samplerate [sec]
         float sim_time; // simulation time in seconds
 
+        Tensor<Air> tensor;
 
 
     public:
