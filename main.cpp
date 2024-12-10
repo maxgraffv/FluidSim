@@ -1,18 +1,19 @@
 #include "core.h"
 
 #include <stdio.h>
+#include <iostream>
 
 
 
 int main(int argc, char** argv)
 {
 
-    Tensor<Air> tensor = Tensor<Air>(5, 5, 5);
+    Tensor<Air> tensor(3, 3, 1);
 
     for(int i = 0; i < tensor.getLength(); i++)
     {
-        Air* ap = tensor.data[i];
-        printf("%s: %d\n", ap->name, ap->id);
+        Air ap = tensor.data[i];
+        std::cout << ap.getName() << ": " << ap.getId() << std::endl;
     }
 
 
